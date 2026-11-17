@@ -1,0 +1,86 @@
+/* Main Cascading Style Sheets for Two Party Preferred Sound System website */
+
+:root {
+  --main-heading-color: rgb(201, 114, 0);
+  --second-heading-color: rgb(228, 220, 148);
+  --third-heading-color: rgb(148, 205, 228);
+  --test-color: rgb(20, 197, 20);
+}
+
+body {
+  background-color: rgb(34, 34, 34);
+  color: rgb(199, 199, 199);
+}
+
+a {
+  color: aqua;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  /* border: 1px solid red; */
+  display: grid;
+  justify-content: center;
+  padding: 10px;
+}
+
+.header {
+  /* border: 1px solid blue; */
+}
+
+.main-heading {
+  text-align: center;
+  color: var(--main-heading-color);
+}
+
+.page-content {
+  /* border: 1px solid green; */
+}
+
+.center-heading {
+  text-align: center;
+  color: var(--third-heading-color)
+}
+
+.sub-heading {
+  color: var(--second-heading-color);
+  text-align: center;
+}
+
+.fine-print {
+  font-size: x-small;
+}
+
+.strike{
+    position: relative;
+}
+
+.strike::after{
+    content: '';
+    border-bottom: 3px solid red;
+    position: absolute;
+    left: 0;
+    top: 53%;
+    width: 100%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 50px);
+}
+
+.contact-type, .contact-detail {
+  font-size: 20px;
+}
+
+.contact-type {
+  text-align: end;
+  margin-right: 20px;
+}
+
+.contact-detail {
+  text-align: start;
+  margin-left: 20px;
+}
